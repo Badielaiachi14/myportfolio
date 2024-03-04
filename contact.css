@@ -1,0 +1,27 @@
+
+.mainnav{
+    animation: fade-in 2.5s;
+}
+
+@keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 2;}
+  }
+  
+  h1{
+    animation: bounce 2s;
+    animation: color 10s;
+  }
+
+  @keyframes bounce{
+    from{margin-top: 0px;}
+    to{margin-bottom: 100px;}
+  }
+
+  @keyframes color{
+    0%{color: whitesmoke;}
+    20%{color: brown;}
+    40%{color: blueviolet;}
+    80%{color: cyan;}
+    100%{opacity: 0;}
+  }

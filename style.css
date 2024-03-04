@@ -1,0 +1,538 @@
+body{
+  background: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    align-items: center;
+    overflow: hidden;
+    background: #000;
+    margin-left: 1%;
+    width: 99%;
+}
+
+.humburger{
+  display: none;
+}
+
+
+.txt{
+    animation: animate 5s ease-in-out ;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-left: 200px;
+}
+
+
+@keyframes animate{
+  0% {
+    color: white;
+  }
+
+  25% {
+    color: cyan;
+    letter-spacing: 2px;
+  }
+
+  50%{
+    color: aqua;
+  }
+
+  100% {
+    color: rgba(0, 255, 255, 0);
+  }
+}
+
+.text{
+    font-size: 40px;
+
+}
+
+
+.navbar{
+  animation:fade-in 10s 1;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px 1000px;
+    margin-right: 20px;
+    margin-bottom: -420px;
+    cursor: pointer;
+    color: #ffffff;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+@keyframes fade-in{
+  from{opacity: 0;}
+  to{opacity: 2;}
+}
+
+
+.au{
+  color: white;
+  text-align: center;
+  height: 25px;
+  width: 70px;
+  transition: 1s;
+}
+
+.au:hover,
+au:active{
+    background-color: blueviolet;
+    box-shadow: 0 2px 5px red;
+
+  }
+
+  .navbar li{
+    box-shadow: 5px 5px 10px black;
+  }
+
+
+  .mainnavbar{
+    width: 100%;
+  }
+
+
+
+
+/* css for subnav bar  */
+
+.mainNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.mainnav{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.mainnavbar ul li a{
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.mainnavbar ul li:hover > a {
+    background-color: blueviolet;
+  }
+
+  .subnav {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px red;
+  }
+
+  .hassubNav li {
+    display: block;
+  }
+
+  .hassubnav:hover .subnav {
+    display: block;
+  }
+
+  .subnav:hover{
+    background: black;
+  }
+
+  /* nav and subnave code ends here */
+
+  .hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 250px;
+    animation: fade 12s 1;
+  }
+
+  @keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 2;}
+  }
+
+.himg{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    animation: right 3s;
+}
+
+@keyframes right{
+  from{margin-left: 100%;}
+  to{margin-left: 0%;}
+}
+
+.htext{
+  width: 50%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  animation: left 3s;
+}
+
+@keyframes left{
+  from{margin-right: 100%;}
+  to{margin-right: 0%;}
+}
+
+.hbutton{
+  height: 50px;
+  width: 150px;
+  margin-top: 80px;
+  margin-left: 700px;
+  background: blueviolet;
+  box-shadow: 20px,20px,20px,black;
+  border-radius: 20%;
+  letter-spacing: 2px;
+  transition: 1s;
+}
+
+.hbutton:hover,
+.hbutton:active{
+  border-bottom: goldenrod;
+  transform: matrix(1,1);
+  color: white;
+  background: #000;
+}
+
+.skills{
+  animation: skillpop 10s;  
+}
+
+.myskills {
+  background-image: url(skill.png);
+  margin-top: 50px;
+  color: cyan;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  animation: skillpop 5s; 
+}
+
+@keyframes skillpop{
+  from{
+    opacity: 0;
+    margin-top: 200px;
+  }
+
+  to{
+    opacity: 1;
+    margin: 0px;
+  }
+}
+
+/* code for form */
+
+.form{
+  background-image: url(form.jpg);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 160px;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  animation: incop 10s;
+}
+
+@keyframes incop{
+  from{opacity: 0;}
+  to{opacity: 2;}
+}
+
+.name{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 110px;
+  margin-top: 20px;
+  height: 30px;
+  width: 80%;
+  text-align: center;
+}
+
+.email{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 110px;
+  margin-top: 20px;
+  height: 30px;
+  width: 80%;
+  text-align: center;
+}
+
+.pno{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 110px;
+  margin-top: 20px;
+  height: 30px;
+  width: 80%;
+  text-align: center;
+}
+
+.des{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 110px;
+  margin-top: 20px;
+  height: 30px;
+  width: 80%;
+  text-align: center;
+}
+
+.fbtn{
+  margin-top: 20px;
+  background: blueviolet;
+  color: antiquewhite;
+  height: 35px;
+  width: 50%;
+  border-radius: 20%;
+  transition: 1s;
+}
+
+.fbtn:hover,
+.fbtn:active{
+  border-bottom: goldenrod;
+  transform: matrix(1,1);
+  color: white;
+  background: #000; 
+}
+
+.frontende{
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  animation: fleft 5s;
+}
+
+@keyframes fleft{
+  from{margin-left: 200px;}
+  to{margin-right: 0px;}
+}
+
+.frontend{
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+
+.wordpress{
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  animation: fright 5s;
+}
+
+@keyframes fright{
+  from{margin-right: 200px;}
+  to{margin-left: 0px;}
+}
+
+
+.word{
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.fullstacke{
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  animation: flight 5s;
+}
+
+@keyframes flight{
+  from{margin-right: 200px;}
+  to{margin-left: 0px;}
+}
+
+
+.fullstack{
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+
+.active{
+  height: 12rem;
+}
+
+
+
+
+/*  fotter  section */
+
+
+
+
+
+
+
+/* responsive code for mobile 430px */
+
+@media screen and (max-width:430px){
+
+
+  .navbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-size :600px 1200px ;
+    margin-right: 1px;
+    gap: 2px;
+  }
+
+
+  .mainnavbar{
+    flex-direction: row;
+  }
+
+
+
+ .au{
+  margin-top: 100px;
+  width: 30px;
+  margin-bottom: 100px;
+ }
+
+
+  .mainnav{
+    width: 100%;
+    margin-left: -60px;
+    gap: 1px;  
+  }
+
+  .txt{
+    margin-left: 1px;
+  }
+
+
+  .hero{
+    flex-direction: column;
+  }
+
+
+  .htext{
+    width: 100%;
+  }
+
+
+  .hbutton{
+    margin-left: 150px;
+  }
+
+  .myskills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .jwdp{
+    width: 90%;
+    margin-left: 100px;
+  }
+
+  .form{
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .name{
+    color: black;
+    margin-top: 20px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    margin-left: 1px;
+  }
+
+  .email{
+    color: black;
+    margin-top: 20px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    margin-left: 1px;
+  }
+
+  .pno{
+    color: black;
+    margin-top: 20px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    margin-left: 1px;
+  }
+
+  .des{
+    color: black;
+    margin-top: 20px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    margin-left: 1px;
+  }
+
+  .frontende{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wordpress{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fullstacke{
+      margin-top: 50px;
+      align-items: center;
+      justify-content: space-evenly;
+      display: flex;
+      flex-direction: column;
+    
+  
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+ 
+

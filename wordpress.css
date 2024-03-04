@@ -1,0 +1,23 @@
+.project{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img{
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 430px){
+    .project{
+        flex-direction: column;
+    }
+
+
+    .angelos{
+        flex-direction: column;
+    }
+
+}
